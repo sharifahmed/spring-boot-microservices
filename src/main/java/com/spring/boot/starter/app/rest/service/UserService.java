@@ -1,6 +1,6 @@
-package com.spring.boot.starter.app.helloWorld.service;
+package com.spring.boot.starter.app.rest.service;
 
-import com.spring.boot.starter.app.helloWorld.model.User;
+import com.spring.boot.starter.app.rest.model.User;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

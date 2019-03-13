@@ -1,4 +1,4 @@
-package com.spring.boot.starter.app.helloWorld.model;
+package com.spring.boot.starter.app.rest.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

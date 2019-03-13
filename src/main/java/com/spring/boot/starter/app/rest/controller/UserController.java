@@ -1,8 +1,8 @@
-package com.spring.boot.starter.app.helloWorld.controller;
+package com.spring.boot.starter.app.rest.controller;
 
-import com.spring.boot.starter.app.helloWorld.model.User;
-import com.spring.boot.starter.app.helloWorld.repository.UserRepository;
-import com.spring.boot.starter.app.helloWorld.service.UserService;
+import com.spring.boot.starter.app.rest.model.User;
+import com.spring.boot.starter.app.rest.repository.UserRepository;
+import com.spring.boot.starter.app.rest.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

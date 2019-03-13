@@ -1,6 +1,6 @@
-package com.spring.boot.starter.app.helloWorld.controller;
+package com.spring.boot.starter.app.rest.controller;
 
-import com.spring.boot.starter.app.helloWorld.model.Book;
+import com.spring.boot.starter.app.rest.model.Book;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
