@@ -1,6 +1,6 @@
-package com.spring.boot.starter.springbootstarter.app.web.repository;
+package com.spring.boot.starter.app.helloWorld.repository;
 
-import com.spring.boot.starter.springbootstarter.app.web.model.User;
+import com.spring.boot.starter.app.helloWorld.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

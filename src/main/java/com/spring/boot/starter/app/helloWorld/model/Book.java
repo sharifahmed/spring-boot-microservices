@@ -1,4 +1,4 @@
-package com.spring.boot.starter.springbootstarter.app.web.model;
+package com.spring.boot.starter.app.helloWorld.model;
 
 /**
  * @author sharif.ahmed

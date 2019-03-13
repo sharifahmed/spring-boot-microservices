@@ -1,7 +1,7 @@
-package com.spring.boot.starter.springbootstarter.app.web.runner;
+package com.spring.boot.starter.app.helloWorld.runner;
 
-import com.spring.boot.starter.springbootstarter.app.web.model.User;
-import com.spring.boot.starter.springbootstarter.app.web.service.UserService;
+import com.spring.boot.starter.app.helloWorld.model.User;
+import com.spring.boot.starter.app.helloWorld.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
