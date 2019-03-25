@@ -1,5 +1,6 @@
 package com.spring.boot.starter.app.rest.controller;
 
+import com.spring.boot.starter.app.rest.exception.UserNotFoundException;
 import com.spring.boot.starter.app.rest.model.User;
 import com.spring.boot.starter.app.rest.repository.UserRepository;
 import com.spring.boot.starter.app.rest.service.UserService;
@@ -10,6 +11,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
+
+import static java.util.Objects.isNull;
 
 /**
  * @author sharif.ahmed
@@ -26,12 +29,24 @@ public class UserController {
 
     @GetMapping("/user/{id}")
     public User getUser(@PathVariable long id) {
-        return userService.find(id);
+        User user = userService.find(id);
+
+        if (isNull(user)) {
+            throw new UserNotFoundException("User not found with id = " + id);
+        }
+
+        return user;
     }
 
     @GetMapping("/repoUser/{id}")
     public User getRepoUser(@PathVariable long id) {
-        return userRepository.findOne(id);
+        User user = userRepository.findOne(id);
+
+        if (isNull(user)) {
+            throw new UserNotFoundException("User not found with id = " + id);
+        }
+
+        return user;
     }
 
     @GetMapping("/users")
