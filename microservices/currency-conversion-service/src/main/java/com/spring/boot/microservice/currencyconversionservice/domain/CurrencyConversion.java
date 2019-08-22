@@ -13,16 +13,23 @@ public class CurrencyConversion {
     private BigDecimal amount;
     private BigDecimal conversionRate;
     private BigDecimal result;
+    private int port;
 
     protected CurrencyConversion() {
     }
 
-    public CurrencyConversion(String from, String to, BigDecimal amount, BigDecimal conversionRate, BigDecimal result) {
+    public CurrencyConversion(String from,
+                              String to,
+                              BigDecimal amount,
+                              BigDecimal conversionRate,
+                              BigDecimal result,
+                              int port) {
         this.from = from;
         this.to = to;
         this.amount = amount;
         this.conversionRate = conversionRate;
         this.result = result;
+        this.port = port;
     }
 
     public String getFrom() {
@@ -43,5 +50,9 @@ public class CurrencyConversion {
 
     public BigDecimal getResult() {
         return result;
+    }
+
+    public int getPort() {
+        return port;
     }
 }

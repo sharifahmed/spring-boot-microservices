@@ -26,6 +26,7 @@ public class CurrencyConversionController {
 
         CurrencyConversion currencyConversion = exchangeServiceProxy.getExchangeRate(from, to);
         BigDecimal result = amount.multiply(currencyConversion.getConversionRate());
-        return new CurrencyConversion(from, to, amount, currencyConversion.getConversionRate(), result);
+        return new CurrencyConversion(from, to, amount, currencyConversion.getConversionRate(), result,
+                currencyConversion.getPort());
     }
 }
